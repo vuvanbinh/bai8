@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>KhaiBaoDangNhap</title>
 </head>
 <body>
-$END$
+ <script>
+    letls userName = prompt("Who's there?", '');
+    if(userName=='admin'){
+        let pass = prompt('PassWord?', '');
+        if(pass == 'themaster'){
+            alert('wellcome');
+        }else if (pass == null){
+            alert('Cenceled.');
+        }else {
+            alert('Wrong password')
+        }
+    }else if(userName==null){
+        alert('Canceled');
+    }else{
+        alert("I don't know you");
+    }
+
+
+
+ </script>
 </body>
 </html>
