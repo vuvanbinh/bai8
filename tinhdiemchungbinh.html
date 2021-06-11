@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhdimechungbinh</title>
+</head>
+<style>
+
+    .ad {
+        padding-left: 60px;
+        margin-right: 60px;
+    }
+
+
+</style>
+<body style="background-color: greenyellow">
+<h1>Tính điểm chung bình.</h1>
+<label class="ad">TOÁN</label>
+<label class="ad">LÝ</label>
+<label class="ad">HOÁ</label><br>
+
+<input type="number" id="toan" placeholder="Nhập điểm toán">
+<input type="number" id="ly" placeholder="Nhập điểm lý">
+<input type="number" id="hoa" placeholder="Nhập điểm hoá"><br><br>
+<button style="background-color: powderblue" type="button" onclick="demo()">Tinh</button>
+<input id="ketqua" placeholder="ketqua:">
+<input id="thongbao">
+<!--<p id="ketqua2" >Ket qua:</p>-->
+<script>
+    function demo() {
+        let a = +document.getElementById('toan').value;
+        let b = +document.getElementById('ly').value;
+        let c = +document.getElementById('hoa').value;
+        let d = (a + b + c) / 3;
+        document.getElementById('ketqua').value = d;
+        document.getElementById('ketqua2').innerHTML = d;
+        if (d > 7) {
+            document.getElementById('thongbao').value = 'Tốt';
+        } else if (d > 5) {
+            document.getElementById('thongbao').value = 'Đạt';
+        } else if (d > 3) {
+            document.getElementById('thongbao').value = 'Không Đạt';
+        } else {
+            document.getElementById('thongbao').value = 'Yếu';
+        }
+        ;
+    }
+
+    //    if(d>3){
+    //        if(d>5){
+    //            if(d>7){
+    //                document.getElementById('thongbao').value="Tot";
+    //            }else {
+    //                document.getElementById('thongbao').value='Dat';
+    //            }
+    //        }else {
+    //            document.getElementById('thongbao').value='khong dat';
+    //        }
+    //    }else {
+    //        document.getElementById('thongbao').value='Yeu';
+    //    }
+    //
+    // }
+
+</script>
+
+
+</body>
+</html>
